@@ -23,10 +23,10 @@
 }
 
 #define DIRECT_PINS_RIGHT { \
-    { GP7, GP6, GP5, GP4, GP3, GP2}, \
-    { GP13, GP12, GP11, GP10, GP9, GP8}, \
-    { GP16, GP15, GP14, GP17, GP18, GP19}, \
-    { GP20, GP21, GP22, NO_PIN, NO_PIN, NO_PIN} \
+    { GP2, GP3, GP4, GP5, GP6, GP7}, \
+    { GP8, GP9, GP10, GP11, GP12, GP13}, \
+    { GP19, GP18, GP17, GP14, GP15, GP16 }, \
+    { GP22, GP21, GP20, NO_PIN, NO_PIN, NO_PIN} \
 }
 
 #define BOOTMAGIC_LITE_ROW    0
