@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#pragma once
+
+#include "config_common.h"
+
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 1000U
+
+#define SERIAL_USART_FULL_DUPLEX
+#define SERIAL_USART_TX_PIN GP0
+#define SERIAL_USART_RX_PIN GP1
+
+/* key matrix size */
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 6
+
+#define DIRECT_PINS { \
+    { GP7, GP6, GP5, GP4, GP3, GP2}, \
+    { GP13, GP12, GP11, GP10, GP9, GP8}, \
+    { GP16, GP15, GP14, GP17, GP18, GP19}, \
+    { GP20, GP21, GP22, NO_PIN, NO_PIN, NO_PIN} \
+}
+
+#define DIRECT_PINS_RIGHT { \
+    { GP7, GP6, GP5, GP4, GP3, GP2}, \
+    { GP13, GP12, GP11, GP10, GP9, GP8}, \
+    { GP16, GP15, GP14, GP17, GP18, GP19}, \
+    { GP20, GP21, GP22, NO_PIN, NO_PIN, NO_PIN} \
+}
+
+#define BOOTMAGIC_LITE_ROW    0
+#define BOOTMAGIC_LITE_COLUMN 5
+
+// When USB_VBUS_PIN is not defined, SPLIT_USB_DETECT is used.
+#define USB_VBUS_PIN GP24 // for Raspberry Pi Pico

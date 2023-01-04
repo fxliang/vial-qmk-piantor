@@ -23,3 +23,9 @@ jobs:
       run: |
         make git-submodule
         python3 util/ci_compile_vial_keyboards.py
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        if-no-files-found: error
+        path: |
+          ./.build/fxliang_picorne_vial.uf2
