@@ -19,6 +19,8 @@
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
 
+#define SPLIT_HAND_PIN GP24
+#define SPLIT_TRANSPORT_MIRROR
 #define DIRECT_PINS { \
     { GP7, GP6, GP5, GP4, GP3, GP2}, \
     { GP13, GP12, GP11, GP10, GP9, GP8}, \
@@ -37,4 +39,4 @@
 #define BOOTMAGIC_LITE_COLUMN 5
 
 // When USB_VBUS_PIN is not defined, SPLIT_USB_DETECT is used.
-// #define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
+#define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
