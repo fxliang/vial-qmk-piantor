@@ -39,4 +39,4 @@
 #define BOOTMAGIC_LITE_COLUMN 5
 
 // When USB_VBUS_PIN is not defined, SPLIT_USB_DETECT is used.
-#define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
+// #define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
