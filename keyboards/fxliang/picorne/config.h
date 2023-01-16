@@ -11,6 +11,10 @@
 #define SERIAL_USART_TX_PIN GP0
 #define SERIAL_USART_RX_PIN GP1
 
+#define SPLIT_LED_STATE_ENABLE
+#define LED_CAPS_LOCK_PIN	GP25
+#define LED_PIN_ON_STATE	1
+
 /* key matrix size */
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
@@ -33,4 +37,4 @@
 #define BOOTMAGIC_LITE_COLUMN 5
 
 // When USB_VBUS_PIN is not defined, SPLIT_USB_DETECT is used.
-#define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
+// #define USB_VBUS_PIN GP24 // for Raspberry Pi Pico
